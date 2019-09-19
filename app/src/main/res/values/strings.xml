@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Award</string>
+    <string name="award">AWARD</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_email_address_to_sign_in_and_continue">Enter your email address\nto sign in and continue</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="auth_email">xenix.sasongko@gmail.com</string>
+    <string name="incorrect_email">Email Address is not exists</string>
+    <string name="mandatory_email">Email is mandatory!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home">Awards</string>
+    <string name="nav_header_title">Awards Menu</string>
+    <string name="action_settings">Setting</string>
+    <string name="awards">Awards</string>
+    <string name="no_awards_found">No Awards Found</string>
+    <string name="title_activity_test">test</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="filter">Filter</string>
+    <string name="poin_needed">Poin Needed</string>
+    <string name="awards_type">Awards Type</string>
+    <string name="all_type">All Type</string>
+    <string name="vouchers">Vouchers</string>
+    <string name="others">Others</string>
+    <string name="products">Products</string>
+    <string name="clear_all_filter">Clear All Filter</string>
+</resources>

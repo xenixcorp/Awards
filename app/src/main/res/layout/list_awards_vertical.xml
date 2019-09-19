@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/whitesmoke"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lyt_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_gravity="center">
+
+                    <com.xenix.award.helper.skeleton.SkeletonGroup
+                        android:id="@+id/skeletonGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        Skeleton:SK_BackgroundViewsColor="#EEEEEE"
+                        Skeleton:SK_animationAutoStart="true"
+                        Skeleton:SK_animationDirection="LTR"
+                        Skeleton:SK_animationDuration="1000"
+                        Skeleton:SK_animationFinishType="none"
+                        Skeleton:SK_animationNormalType="gradient"
+                        Skeleton:SK_backgroundMainColor="@android:color/transparent"
+                        Skeleton:SK_highLightColor="#DEDEDE">
+
+                        <com.xenix.award.helper.skeleton.SkeletonView
+                            android:id="@+id/skeletonViewPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            Skeleton:SK_cornerRadius="0dp"
+                            Skeleton:SK_padding="0dp"
+                            Skeleton:SK_shapeType="rect">
+
+                            <ImageView
+                                android:id="@+id/iv_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                        </com.xenix.award.helper.skeleton.SkeletonView>
+                    </com.xenix.award.helper.skeleton.SkeletonGroup>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textview_rounded_royalblue"
+                        android:padding="8dp"
+                        android:text="Vouchers"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_poin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="500.000 Poin"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:text="Gift Card IDR 1.000.000"
+        android:textColor="@color/dimgray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
